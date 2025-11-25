@@ -1,0 +1,45 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "InovaTech API",
+    "version": "1.0",
+    "description": "Documentação da API do laboratório de criação de APIs"
+  },
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Endpoint principal",
+        "description": "Verifica o status da API",
+        "responses": {
+          "200": {
+            "description": "Mensagem de status",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/items": {
+      "get": {
+        "summary": "Obter lista de itens",
+        "description": "Retorna uma lista de itens disponíveis.",
+        "responses": {
+          "200": {
+            "description": "Uma lista de itens",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
