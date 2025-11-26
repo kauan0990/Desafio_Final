@@ -49,3 +49,4 @@ jobs:
           vercel --token=$VERCEL_TOKEN --yes --prod \
             --org $VERCEL_ORG_ID \
             --project $VERCEL_PROJECT_ID
+            
